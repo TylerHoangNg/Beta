@@ -1,0 +1,32 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "admin2",
+    "email": "admin@example.com",
+    "password": "1234"
+}
+
+################################
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "1234"
+}
+
+
+################################
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+    
+    {
+        "title": "Example Post",
+        "content": "This is an example post",
+        "url": "localhost:5000/api/posts/1",
+        "status": "public",
+        "author": 1
+    }
